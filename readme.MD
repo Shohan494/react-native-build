@@ -31,4 +31,13 @@ https://facebook.github.io/react-native/docs/getting-started.html
 
 #### So now the target is to be familiar with the tutorials and the official docs..
 
+#### Another error found after somedays in the active react native apps don't know the reason why but they called it watchman error.. Found the solution -
+
+	echo 256 | sudo tee -a /proc/sys/fs/inotify/max_user_instances
+	echo 32768 | sudo tee -a /proc/sys/fs/inotify/max_queued_events
+	echo 65536 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
+	watchman shutdown-server
+	
+this commands will do the job.. Tsolution was picked from here - https://github.com/facebook/react-native/issues/3199
+
 
