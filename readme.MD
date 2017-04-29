@@ -38,6 +38,6 @@ https://facebook.github.io/react-native/docs/getting-started.html
 	echo 65536 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
 	watchman shutdown-server
 	
-this commands will do the job.. Tsolution was picked from here - https://github.com/facebook/react-native/issues/3199
+This commands will do the job.. The solution was picked from here - https://github.com/facebook/react-native/issues/3199
 
 
